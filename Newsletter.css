@@ -1,0 +1,114 @@
+.newsletter {
+  background: var(--ink);
+  margin: 4rem 0 0;
+  padding: 5rem 2rem;
+}
+
+.newsletter__inner {
+  max-width: 560px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.newsletter__ornament {
+  font-size: 1.2rem;
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+  display: block;
+  letter-spacing: 0.3em;
+}
+
+.newsletter__title {
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 300;
+  color: var(--cream);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.newsletter__body {
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: italic;
+  color: rgba(250, 248, 243, 0.6);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.newsletter__form {
+  display: flex;
+  gap: 0;
+  max-width: 440px;
+  margin: 0 auto 1rem;
+}
+
+.newsletter__input {
+  flex: 1;
+  background: transparent;
+  border: 1px solid rgba(250, 248, 243, 0.3);
+  border-right: none;
+  color: var(--cream);
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  padding: 0.85rem 1.2rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.newsletter__input::placeholder {
+  color: rgba(250, 248, 243, 0.3);
+}
+
+.newsletter__input:focus {
+  border-color: var(--gold);
+}
+
+.newsletter__btn {
+  background: var(--gold);
+  border: 1px solid var(--gold);
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink);
+  padding: 0.85rem 1.6rem;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.newsletter__btn:hover {
+  background: var(--gold-light);
+}
+
+.newsletter__thanks {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--gold-light);
+  margin-bottom: 1rem;
+}
+
+.newsletter__fine {
+  font-family: var(--sans);
+  font-size: 0.6rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  color: rgba(250, 248, 243, 0.3);
+  text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+  .newsletter__form {
+    flex-direction: column;
+  }
+  .newsletter__input {
+    border-right: 1px solid rgba(250, 248, 243, 0.3);
+    border-bottom: none;
+  }
+}
